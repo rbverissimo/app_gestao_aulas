@@ -1,5 +1,6 @@
 :root {
     --main-bg-color: #1B1B3A;
+    --header-bg-color: #EBEBEB;
 }
 
 * {
@@ -10,4 +11,8 @@
 
 html, body {
     background-color: var(--main-bg-color) ;
+}
+
+.header-global {
+    background-color: var(--header-bg-color);
 }
