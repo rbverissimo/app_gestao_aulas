@@ -15,4 +15,7 @@ html, body {
 
 .header-global {
     background-color: var(--header-bg-color);
+    padding: 10px;
+    height: 10vh;
+    min-height: calc(75%);
 }
