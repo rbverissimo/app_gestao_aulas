@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     </head>
     <body>
-        <h2>Home</h2>
-        <p>Gerado com sucesso</p>
+        
     </body>
 </html>
