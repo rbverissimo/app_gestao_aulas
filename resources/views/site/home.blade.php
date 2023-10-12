@@ -6,5 +6,8 @@
     </head>
     <body>
         <x-header-global />
+        <div class="container-direito">
+
+        </div>
     </body>
 </html>

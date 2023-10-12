@@ -19,3 +19,27 @@ html, body {
     height: 10vh;
     min-height: calc(75%);
 }
+
+.container-direito {
+    display: block;
+    width: 700px;
+    height: 80vh;
+    margin-top: 20px;
+    margin-left: calc(50%);
+    border: dotted red 1px;
+}
+
+
+@media (max-width: 728px) {
+    .header-global {
+        background-color: var(--header-bg-color);
+        padding: 5px;
+        height: 10vh;
+        min-height: calc(75%);
+    }
+
+    .lado-direito {
+        max-width: 344px;
+        margin: 0 auto;
+    }
+}
