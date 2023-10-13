@@ -9,7 +9,8 @@ class Aluno extends Model
 {
     use HasFactory;
 
-    public $nome; 
+    public $name;
     public $telefone;
 
+    protected $fillable = ['nome', 'telefone'];
 }

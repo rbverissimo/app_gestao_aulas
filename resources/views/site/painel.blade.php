@@ -1,3 +1,3 @@
 <div class="side-painel">
-    <x-aluno :aluno="$aAlunoMock" /> 
+    <x-aluno-card :aluno="$mockAluno" /> 
 </div>

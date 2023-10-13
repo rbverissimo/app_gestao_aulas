@@ -3,17 +3,21 @@
 namespace App\View\Components;
 
 use Illuminate\View\Component;
+use app\Models\Aluno;
 
-class aluno extends Component
+class AlunoCard extends Component
 {
+
+    public Aluno $aluno;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
-    {
-        //
+    public function __construct(
+        $aluno
+    ) {
+        $this->aluno=$aluno;
     }
 
     /**
@@ -23,6 +27,6 @@ class aluno extends Component
      */
     public function render()
     {
-        return view('components.aluno');
+        return view('components.aluno-card');
     }
 }
