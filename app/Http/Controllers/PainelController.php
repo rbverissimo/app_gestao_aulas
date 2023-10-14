@@ -10,10 +10,7 @@ class PainelController extends Controller
     public function showPainel()
 {
     $mockAluno = new Aluno([
-        'nome'=>'Jorge Pinchemel', 
-        'curso'=> 'Aulas de Guitarra',
-        'horaAula'=>'R$70',
-        'ultimaAula'=>'12-08-2023'
+        'nome'=>'Jorge Pinchemel'
     ]);
 
     return view('site.painel', compact('mockAluno'));

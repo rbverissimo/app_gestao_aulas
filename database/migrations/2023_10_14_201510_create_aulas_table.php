@@ -1,11 +1,10 @@
 <?php
 
-use App\Models\Responsavel;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAlunosTable extends Migration
+class CreateAulasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,12 +13,14 @@ class CreateAlunosTable extends Migration
      */
     public function up()
     {
-        Schema::create('alunos', function (Blueprint $table) {
+        Schema::create('aulas', function (Blueprint $table) {
             $table->id();
-            $table->text('nome');
-            $table->text('cpf');
-            $table->text('celular');
-            $table->foreignId('idResponsavel');
+            $table->foreignId('idAluno');
+            $table->date('dataAula');
+            $table->text('descricao');
+            $table->foreignId('idPagamento');
+            $table->double('valorAula', 8, 2);
+            $table->integer('referenciaAula');
             $table->timestamps();
         });
     }
@@ -31,6 +32,6 @@ class CreateAlunosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('alunos');
+        Schema::dropIfExists('aulas');
     }
 }

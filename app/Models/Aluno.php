@@ -9,11 +9,10 @@ class Aluno extends Model
 {
     use HasFactory;
 
-    public $name;
-    public $telefone;
-    public $curso;
-    public $horaAula;
-    public $ultimaAula;
+    public string $nome;
+    public string $cpf;
+    public string $celular;
+    public int $idResponsavel;
 
-    protected $fillable = ['nome', 'curso', 'horaAula', 'ultimaAula'];
+    protected $fillable = [ 'id', 'nome', 'cpf', 'celular', 'idResponsavel'];
 }
