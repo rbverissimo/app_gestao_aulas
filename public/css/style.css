@@ -1,6 +1,9 @@
 :root {
     --main-bg-color: #1B1B3A;
     --header-bg-color: #EBEBEB;
+    --card-box-color: #EBEBEB;
+    --border-color: #748179;
+    --dark-border-color: #3a403c;
 }
 
 * {
@@ -27,6 +30,20 @@ html, body {
     margin-top: 20px;
     margin-left: calc(50%);
     border: dotted red 1px;
+}
+
+.card-box {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--card-box-color);
+    box-shadow: 0px 0px 5px 0px var(--border-color);
+    transition: box-shadow 0.3s; /* Add a transition for the hover effect */
+}
+
+
+.card-box:hover {
+    box-shadow: 0px 0px 15px 0px var(--dark-border-color);
 }
 
 

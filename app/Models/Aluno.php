@@ -11,6 +11,9 @@ class Aluno extends Model
 
     public $name;
     public $telefone;
+    public $curso;
+    public $horaAula;
+    public $ultimaAula;
 
-    protected $fillable = ['nome', 'telefone'];
+    protected $fillable = ['nome', 'curso', 'horaAula', 'ultimaAula'];
 }
