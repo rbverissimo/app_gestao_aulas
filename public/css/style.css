@@ -26,69 +26,9 @@ html, body {
     min-height: calc(75%);
 }
 
-.container-direito {
-    display: block;
-    width: 700px;
-    height: 80vh;
-    margin-top: 20px;
-    margin-left: calc(50%);
-    border: dotted red 1px;
-}
-
-.container-menu {
-
-}
-
-.menu-icone {
-    display: block;
-    width: 30px;
-    height: 3px;
-    background: var(--dark-bg-color);
-    margin: 10px;
-    cursor: pointer;
-}
-
-.barra {
-    height: 3px;
-    background: var(--details-color);
-    margin: 5px 0;
-    transition: 0.4s;
-}
-
-.dropdown-menu {
-    display: none;
-    background: var(--dark-bg-color);
-    position: absolute;
-    top: 50px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.dropdown-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.dropdown-menu li {
-    margin: 10px 0;
-}
-
 a {
-    color: #EBEBEB;
+    color: #3a403c;
     text-decoration: none;
-}
-
-.menu-open .barra:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.menu-open .barra:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-open .barra:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, 6px);
 }
 
 .card-box {
