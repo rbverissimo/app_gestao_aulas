@@ -22,13 +22,43 @@ html, body {
 .header-global {
     background-color: var(--header-bg-color);
     padding: 10px;
-    height: 10vh;
+    height: 8vh;
     min-height: calc(75%);
+}
+
+.header-logo {
+    display: inline-block;
+    width: 600px;
+    height: auto;
+    max-height: 90px;
+    border: 1px solid red;
+}
+
+.container-links-header {
+    display: inline;
+    border: 1px solid red;
+    line-height: 8vh;
+    height: 60px;
+    max-width: 50vw;
+    margin-left: 8vw;
+    
+}
+
+.div-header-link {
+    display: inline;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 1vw;
+    cursor: pointer !important;
 }
 
 a {
     color: #3a403c;
     text-decoration: none;
+}
+
+.header-link {
+    font-size: 1.2rem;
 }
 
 .card-box {

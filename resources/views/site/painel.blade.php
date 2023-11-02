@@ -7,7 +7,13 @@
     <body>
         <x-header-global />
         <div class="side-painel">
-            <x-aluno-card :aluno="$mockAluno" /> 
+        @foreach ($mocks as $mock)
+            <x-aluno-card :aluno="$mock" /> 
+        @endforeach
         </div>
+        <script>
+            var data = @json($mocks);
+            console.warn(data);
+        </script>
     </body>
 </html>
