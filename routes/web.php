@@ -11,6 +11,10 @@ Route::get('/home', [HomeController::class, 'showHome'])->name('site.home');
 
 Route::get('/painel', [PainelController::class, 'showPainel'])->name('site.painel');
 
+Route::get('/login', function (){
+    return view('site.login');
+})->name('login');
+
 Route::fallback(function(){
     echo 'URL não encontrada :( <br/> <a href="'.route('site.home').'">Retornar à Home</a>';
 });
