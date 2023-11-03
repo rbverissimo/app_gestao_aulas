@@ -3,6 +3,7 @@
     --header-bg-color: #EBEBEB;
     --card-box-color: #EBEBEB;
     --text-light-color: #EBEBEB;
+    --text-basic-color: #3a403c;
     --border-color: #748179;
     --dark-border-color: #3a403c;
     --dark-bg-color: #3a403c;
@@ -19,6 +20,11 @@ html, body {
     background-color: var(--main-bg-color) ;
 }
 
+a {
+    color: #3a403c;
+    text-decoration: none;
+}
+
 .header-global {
     background-color: var(--header-bg-color);
     padding: 10px;
@@ -31,12 +37,44 @@ html, body {
     width: 600px;
     height: auto;
     max-height: 90px;
-    border: 1px solid red;
+}
+
+.div-header-logo {
+    display: flex;
+    position: relative;
+    margin-left: 1vw;
+}
+
+.header-link-logo {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: lighter
+
+}
+
+.header-link-logo:hover {
+    color: var(--text-basic-color);
+    animation-name: colorChangeInText;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes colorChangeInText {
+    from {color: var(--text-basic-color)} to {color: var(--main-bg-color)}
+    from {text-decoration: none;} to {text-decoration: underline;}
+    
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    } to {
+        transform: rotate(360deg)
+    }
 }
 
 .container-links-header {
     display: inline;
-    border: 1px solid red;
     line-height: 8vh;
     height: 60px;
     max-width: 40vw;
@@ -52,13 +90,12 @@ html, body {
     cursor: pointer !important;
 }
 
-a {
-    color: #3a403c;
-    text-decoration: none;
-}
-
 .header-link {
     font-size: 1.2rem;
+}
+
+.header-link:hover {
+    animation: colorChangeInText .5s linear forwards;
 }
 
 .card-box {
@@ -98,13 +135,11 @@ a {
         width: 30vw;
         height: auto;
         max-height: 90px;
-        border: 1px solid red;
 
     }
 
     .container-links-header {
         display: inline;
-        border: 1px solid red;
         line-height: 8vh;
         height: 60px;
         max-width: 70vw;
