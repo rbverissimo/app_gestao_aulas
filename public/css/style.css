@@ -114,12 +114,29 @@ a {
 }
 
 
-@media (max-width: 728px) {
+@media only screen and (max-width: 728px) {
     .header-global {
         background-color: var(--header-bg-color);
         padding: 5px;
         height: 10vh;
         min-height: calc(75%);
+    }
+
+    .header-logo {
+        display: inline-block;
+        width: 30vw;
+        height: auto;
+        max-height: 90px;
+
+    }
+
+    .container-links-header {
+        display: inline;
+        line-height: 8vh;
+        height: 60px;
+        max-width: 25vw;
+        margin-left: 5vw;
+        border: 1px solid red;
     }
 
     .lado-direito {
