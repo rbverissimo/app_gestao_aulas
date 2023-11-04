@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Aluno extends Model
 {
@@ -17,5 +18,8 @@ class Aluno extends Model
 
     protected $fillable = ['nome', 'cpf', 'celular', 'idResponsavel'];
 
+    public function responsaveis(): HasMany {
+        return $this->hasMany(Responsavel::class, 'idResponsavel');
+    }
     
 }

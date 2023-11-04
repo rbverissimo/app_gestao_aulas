@@ -8,6 +8,8 @@
     --dark-border-color: #3a403c;
     --dark-bg-color: #3a403c;
     --details-color: #BAB700;
+    --details-orange-button-highlights: #fc7a1e;
+    --details-border-darker-orange: #b05717;
 }
 
 * {
@@ -111,6 +113,11 @@ a {
 
 .card-box:hover {
     box-shadow: 0px 0px 15px 0px var(--dark-border-color);
+}
+
+.custom-button {
+    background-color: var(--details-orange-button-highlights);
+    border-color: var(--details-border-darker-orange);
 }
 
 
