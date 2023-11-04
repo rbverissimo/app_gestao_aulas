@@ -16,7 +16,12 @@ class Aluno extends Model
     protected $celular;
     protected $idResponsavel;
 
-    protected $fillable = ['nome', 'cpf', 'celular', 'idResponsavel'];
+    protected $fillable = [
+        'id',
+        'nome', 
+        'cpf', 
+        'celular', 
+        'idResponsavel'];
 
     public function responsaveis(): HasMany {
         return $this->hasMany(Responsavel::class, 'idResponsavel');

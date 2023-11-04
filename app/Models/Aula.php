@@ -21,6 +21,7 @@ class Aula extends Model
     protected $idProfessor; 
 
     protected $fillable = [
+        'id',
         'idAluno',
         'dataAula',
         'idPagamento',
@@ -36,5 +37,9 @@ class Aula extends Model
 
     public function pagamento(): HasOne {
         return $this->hasOne(Pagamento::class, 'idPagamento');
+    }
+
+    public function professor(): HasOne {
+        return $this->hasOne(Professor::class, 'idProfessor');
     }
 }

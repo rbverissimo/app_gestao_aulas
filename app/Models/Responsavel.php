@@ -18,6 +18,7 @@ class Responsavel extends Model
     protected $parentesco;
 
     public $fillable = [
+        'id',
         'nome',
         'telefone',
         'endereco',
