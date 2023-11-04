@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Aula extends Model
 {
@@ -27,4 +29,12 @@ class Aula extends Model
         'referenciaAula',
         'idProfessor',
     ];
+
+    public function aluno(): BelongsTo {
+        return $this->belongsTo(Aluno::class, 'idAluno');
+    }
+
+    public function pagamento(): HasOne {
+        return $this->hasOne(Pagamento::class, 'idPagamento');
+    }
 }
