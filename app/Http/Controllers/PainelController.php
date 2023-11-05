@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Aluno;
+use App\Models\Aula;
 
 class PainelController extends Controller
 {
@@ -11,7 +12,8 @@ class PainelController extends Controller
 {
 
     $alunos = Aluno::all();
+    $aulas = Aula::all();
 
-    return view('site.painel', compact('alunos'));
+    return view('site.painel', compact('alunos', 'aulas'));
 }
 }

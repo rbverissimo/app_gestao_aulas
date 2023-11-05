@@ -12,8 +12,10 @@
         @endforeach
         </div>
         <script>
-            var data = @json($aluno);
+            var data = @json($alunos);
+            var aulas = @json($aulas)
             console.warn(data);
+            console.log(aulas);
         </script>
     </body>
 </html>
